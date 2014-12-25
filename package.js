@@ -1,8 +1,8 @@
  Package.describe({
-  git: 'https://github.com/CollectionFS/Meteor-cfs-tempstore.git',
-  name: 'cfs:tempstore',
-  version: '0.1.3',
-  summary: 'CollectionFS, temporary storage'
+  git: 'https://github.com/gliesesoftware/cfs-tempstore.git',
+  name: 'gliese:cfs-tempstore',
+  version: '0.1.4',
+  summary: 'Gliese flavour of CollectionFS, temporary storage (INTERNAL USE ONLY)'
 });
 
 Npm.depends({
@@ -12,10 +12,10 @@ Npm.depends({
 Package.onUse(function(api) {
   api.versionsFrom('1.0');
 
-  api.use(['cfs:base-package@0.0.27', 'cfs:file@0.1.15']);
+  api.use(['gliese:cfs-base@0.0.28', 'gliese:cfs-file@0.1.16']);
 
-  api.use('cfs:filesystem@0.1.1', { weak: true });
-  api.use('cfs:gridfs@0.0.27', { weak: true });
+  api.use('cfs:filesystem@0.1.3', { weak: true });
+  api.use('gliese:cfs-gridfs@0.0.28', { weak: true });
 
   api.addFiles([
     'tempStore.js'
