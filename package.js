@@ -14,7 +14,7 @@ Package.onUse(function(api) {
 
   api.use(['gliese:cfs-base@0.0.28', 'gliese:cfs-file@0.1.16']);
 
-  api.use('cfs:filesystem@0.1.3', { weak: true });
+  api.use('gliese:cfs-filesystem@0.1.3', { weak: true });
   api.use('gliese:cfs-gridfs@0.0.28', { weak: true });
 
   api.addFiles([
